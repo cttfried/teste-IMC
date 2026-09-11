@@ -18,27 +18,27 @@ function imc() {
     let classificacao = '';
 
     if (valorIMC < 18.5) {
-        classificacao = 'é muito gordo';
+        classificacao = 'abaixo do peso.';
     }
 
     else if (valorIMC < 25) {
-        classificacao = `é muito gordo`;
+        classificacao = `com ideal. Parabéns!`;
     }
 
     else if (valorIMC <30) {
-        classificacao = `é muito gordo`;
+        classificacao = `levemente acima do peso`;
     }
 
     else if (valorIMC <35) {
-        classificacao = `é muito gordo`;
+        classificacao = `com obesidade grau I`
     }
 
     else if (valorIMC <40) {
-        classificacao = `é muito gordo`;
+        classificacao = `com obesidade grau II`
     }
 
     else {
-        classificacao = `é muito gordo`;
+        classificacao = `com obesidade grau III. Cuidado!!!`
     }
 
     resultado.textContent = `${nome} seu IMC é ${valorIMC} e você  ${classificacao}`;
